@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/db/migrate.js"],"names":["sync","force"],"mappings":";;AAAA;;;;AACA;;;;;;AAEA,mBAASA,IAAT,CAAc,EAACC,OAAO,IAAR,EAAd","file":"migrate.js","sourcesContent":["import db from './db';\nimport Password from '../models/password';\n\nPassword.sync({force: true});"]}

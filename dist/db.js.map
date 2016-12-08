@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/db.js"],"names":["callback"],"mappings":";;;;;;AAAA;;;;AACA;;;;;;kBAEe,oBAAY;AACzBA;AACD,C","file":"db.js","sourcesContent":["import db from './db/db';\nimport Password from './models/password';\n\nexport default callback => {\n  callback(db);\n}"]}
