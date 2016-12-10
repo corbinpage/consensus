@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  #page-wrapper {
+    margin: 0 0 0 0;
+  }
+}
+
+.review-rating-stars {
+  margin-right: 1em;
+}

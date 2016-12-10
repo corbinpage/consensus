@@ -25,8 +25,12 @@ initializeDb( db => {
 	// internal middleware
 	app.use(middleware({ config, db }));
 
+  // Assets
+  console.log(__dirname);
+  app.use(express.static(__dirname + '/../public'));
+
 	// api router
-	app.use('/api', api({ config, db }));
+	app.use('/', api({ config, db }));
 
 	app.server.listen(process.env.PORT || config.port);
 

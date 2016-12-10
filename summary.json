@@ -8,26 +8,22 @@
     "product_id": "ADeq9H8l",
 
 
-    review_summary: {}
-    reviewCount: 1000,
-    
+    review_summary: {
+      reviewCount: 1000,
+      },
 
-    "author":{
-      "username":"disqus_api",
-      "about":"",
-      "name":"disqus_api",
-      "url":"",
-      "isFollowing":false,
-      "isFollowedBy":false,
-      "profileUrl":"http://disqus.com/disqus_api/",
-      "avatar":{
-        "permalink":"http://disqus.com/api/users/avatars/disqus_api.jpg",
-        "cache":"http://mediacdn.disqus.com/1091/images/noavatar92.png"
+      reviews: [
+      {
+        "author":{
+          "username":"disqus_api",
+          "name":"disqus_api",
+        }
+        thoughts: ""
+
         },
-        "id":"1",
-        "isAnonymous":false,
-        "email":"example@disqus.com"
-        },
+        ]    
+
+
 
 
 

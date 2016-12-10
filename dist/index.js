@@ -56,8 +56,12 @@ app.use(_bodyParser2.default.json({
 	// internal middleware
 	app.use((0, _middleware2.default)({ config: _config2.default, db: db }));
 
+	// Assets
+	console.log(__dirname);
+	app.use(_express2.default.static(__dirname + '/../public'));
+
 	// api router
-	app.use('/api', (0, _api2.default)({ config: _config2.default, db: db }));
+	app.use('/', (0, _api2.default)({ config: _config2.default, db: db }));
 
 	app.server.listen(process.env.PORT || _config2.default.port);
 

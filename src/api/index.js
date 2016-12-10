@@ -6,9 +6,6 @@ import displayReview from './display-review';
 export default ({ config, db }) => {
 	let api = Router();
 
-	// mount the customer-reviews resource
-	//api.use('/v1/customer-reviews', passwords({ config, db }));
-
   // mount the customer-reviews resource
   api.use('/v1/display-review', displayReview({ config, db }));
 
