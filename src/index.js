@@ -26,7 +26,6 @@ initializeDb( db => {
 	app.use(middleware({ config, db }));
 
   // Assets
-  console.log(__dirname);
   app.use(express.static(__dirname + '/../public'));
 
 	// api router

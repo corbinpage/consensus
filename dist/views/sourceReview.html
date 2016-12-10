@@ -20,31 +20,44 @@
               <div class="forum-post-info">
                 <h4><span class="text-navy"><i class="fa fa-globe"></i> Product Concensus</span> - Excellent - <span class="text-muted">100 Opinions</span></h4>
               </div>
-              {{#each reviews}}
-              <div class="media">
-                <a class="forum-avatar" href="#">
-                  <img src="{{author.avatar.permalink}}" class="img-circle" alt="image">
-                  <!-- <img src="{{author.avatar}}" class="img-circle" alt="image"> -->
-                  <div class="author-info">
-                    {{author.name}}<br>
-                    {{{author.description}}}<br>
-                    <strong>Posts:</strong> {{author.postNumber}}<br>
-                    <strong>Posted:</strong> {{author.postedAt}}<br>
-                  </div>
-                </a>
-                <div class="media-body">
-                  <div class="pull-left text-center">
-                    <div class="m-t-xs review-rating-stars">
-                      {{starsRating}}
-                      <!-- <i class="fa fa-star text-warning"></i> -->
-                      <!-- <i class="fa fa-star text-warning"></i> -->
-                    </div>
-                  </div>
-                  <h4 class="media-heading">{{title}}</h4>
-                  {{{body}}}
+
+
+
+
+
+
+
+          {{#each reviews}}
+          <div class="media">
+            <a class="forum-avatar" href="#">
+              <img src="/img/a1.jpg" class="img-circle" alt="image">
+              <!-- <img src="{{author.avatar}}" class="img-circle" alt="image"> -->
+              <div class="author-info">
+                {{author.name}}<br>
+                {{{author.description}}}<br>
+                <strong>Posts:</strong> {{author.postNumber}}<br>
+                <strong>Posted:</strong> {{author.postedAt}}<br>
+              </div>
+            </a>
+            <div class="media-body">
+              <div class="pull-left text-center">
+                <div class="m-t-xs review-rating-stars">
+                  {{starsRating}}
+                  <!-- <i class="fa fa-star text-warning"></i> -->
+                  <!-- <i class="fa fa-star text-warning"></i> -->
                 </div>
               </div>
-              {{/each}}
+              <h4 class="media-heading">{{title}}</h4>
+              {{{body}}}
+            </div>
+          </div>
+          {{/each}}
+
+
+
+
+
+
 
 
 <!--           <div class="media">

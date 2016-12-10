@@ -12,6 +12,14 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+var _handlebars = require('handlebars');
+
+var _handlebars2 = _interopRequireDefault(_handlebars);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (_ref) {
@@ -52,8 +60,60 @@ exports.default = function (_ref) {
       var sourceCode = _ref3.sourceCode;
 
       // res.json( sourceCode )  
-      res.sendFile(_path2.default.resolve('src/views/forum.html'));
+
+      var context = {
+        reviews: [{
+          author: {
+            name: "Bob Smith",
+            description: "My Description",
+            postNumber: "1000",
+            postedAt: "July 1st, 2015"
+          },
+          title: "Title",
+          starsRating: "3",
+          body: "This is the body."
+        }, {
+          author: {
+            name: "Bob Smith",
+            description: "My Description",
+            postNumber: "1000",
+            postedAt: "July 1st, 2015"
+          },
+          title: "Title",
+          starsRating: "3",
+          body: "This is the body."
+        }]
+      };
+
+      _fs2.default.readFile(_path2.default.resolve('src/views/sourceReview.html'), function (err, data) {
+        if (err) {
+          res.status(404).send('Not found');
+        } else {
+          var source = data.toString();
+          var template = _handlebars2.default.compile(source);
+          var html = template(context);
+
+          res.send(html);
+        }
+      });
     }
+
+    /** PUT /:id - Update a given entity */
+    // update({ password, body }, res) {
+    //   for (let key in body) {
+    //     if (key!=='id') {
+    //       password[key] = body[key];
+    //     }
+    //   }
+    //   res.sendStatus(204);
+    // },
+
+    /** DELETE /:id - Delete a given entity */
+    // delete({ password }, res) {
+    //   db.models.password.splice(db.models.password.indexOf(password), 1);
+    //   res.sendStatus(204);
+    // }
+
   });
 };
 //# sourceMappingURL=display-review.js.map

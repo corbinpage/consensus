@@ -57,7 +57,6 @@ app.use(_bodyParser2.default.json({
 	app.use((0, _middleware2.default)({ config: _config2.default, db: db }));
 
 	// Assets
-	console.log(__dirname);
 	app.use(_express2.default.static(__dirname + '/../public'));
 
 	// api router
