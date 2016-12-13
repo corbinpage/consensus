@@ -19,45 +19,144 @@
             <div class="ibox-content forum-post-container">
               <div class="forum-post-info">
                 <h4><span class="text-navy"><i class="fa fa-globe"></i> Product Concensus</span> - Excellent - <span class="text-muted">100 Opinions</span></h4>
-              </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                      <div class="ibox-title">
+                        <span class="label label-success pull-right">Monthly</span>
+                        <h5>Income</h5>
+                      </div>
+                      <div class="ibox-content">
+                        <h1 class="no-margins">40 886,200</h1>
+                        <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
+                        <small>Total income</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                      <div class="ibox-title">
+                        <span class="label label-info pull-right">Annual</span>
+                        <h5>Orders</h5>
+                      </div>
+                      <div class="ibox-content">
+                        <h1 class="no-margins">275,800</h1>
+                        <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
+                        <small>New orders</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                      <div class="ibox-title">
+                        <span class="label label-warning pull-right">Data has changed</span>
+                        <h5>User activity</h5>
+                      </div>
+                      <div class="ibox-content">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <small class="stats-label">Pages / Visit</small>
+                            <h4>236 321.80</h4>
+                          </div>
 
+                          <div class="col-xs-4">
+                            <small class="stats-label">% New Visits</small>
+                            <h4>46.11%</h4>
+                          </div>
+                          <div class="col-xs-4">
+                            <small class="stats-label">Last week</small>
+                            <h4>432.021</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ibox-content">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <small class="stats-label">Pages / Visit</small>
+                            <h4>643 321.10</h4>
+                          </div>
 
+                          <div class="col-xs-4">
+                            <small class="stats-label">% New Visits</small>
+                            <h4>92.43%</h4>
+                          </div>
+                          <div class="col-xs-4">
+                            <small class="stats-label">Last week</small>
+                            <h4>564.554</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ibox-content">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <small class="stats-label">Pages / Visit</small>
+                            <h4>436 547.20</h4>
+                          </div>
 
-
-
-
-
-          {{#each reviews}}
-          <div class="media">
-            <a class="forum-avatar" href="#">
-              <img src="/img/a1.jpg" class="img-circle" alt="image">
-              <!-- <img src="{{author.avatar}}" class="img-circle" alt="image"> -->
-              <div class="author-info">
-                {{author.name}}<br>
-                {{{author.description}}}<br>
-                <strong>Posts:</strong> {{author.postNumber}}<br>
-                <strong>Posted:</strong> {{author.postedAt}}<br>
-              </div>
-            </a>
-            <div class="media-body">
-              <div class="pull-left text-center">
-                <div class="m-t-xs review-rating-stars">
-                  {{starsRating}}
-                  <!-- <i class="fa fa-star text-warning"></i> -->
-                  <!-- <i class="fa fa-star text-warning"></i> -->
+                          <div class="col-xs-4">
+                            <small class="stats-label">% New Visits</small>
+                            <h4>150.23%</h4>
+                          </div>
+                          <div class="col-xs-4">
+                            <small class="stats-label">Last week</small>
+                            <h4>124.990</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <ul class="stat-list">
+                      <li>
+                        <h2 class="no-margins">2,346</h2>
+                        <small>Total orders in period</small>
+                        <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 48%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins ">4,422</h2>
+                        <small>Orders in last month</small>
+                        <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 60%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins ">9,180</h2>
+                        <small>Monthly income from orders</small>
+                        <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 22%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <h4 class="media-heading">{{title}}</h4>
-              {{{body}}}
-            </div>
-          </div>
-          {{/each}}
-
-
-
-
-
-
+              {{#each reviews}}
+              <div class="media">
+                <a class="forum-avatar" href="#">
+                  <img src="{{author.avatar.permalink}}" class="img-circle" alt="image">
+                  <div class="author-info">
+                    {{author.name}}<br>
+                    {{{author.description}}}<br>
+                    <strong>Posts:</strong> {{author.postNumber}}<br>
+                    <strong>Posted:</strong> {{author.postedAt}}<br>
+                  </div>
+                </a>
+                <div class="media-body">
+                  <div class="pull-left text-center">
+                    <div class="m-t-xs review-rating-stars">
+                      {{{renderStars starsRating}}}
+                    </div>
+                  </div>
+                  <h4 class="media-heading">{{title}}</h4>
+                  {{{body}}}
+                </div>
+              </div>
+              {{/each}}
 
 
 <!--           <div class="media">

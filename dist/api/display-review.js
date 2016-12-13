@@ -16,9 +16,9 @@ var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
 
-var _handlebars = require('handlebars');
+var _handleBarsHelpers = require('../views/handleBarsHelpers.js');
 
-var _handlebars2 = _interopRequireDefault(_handlebars);
+var _handleBarsHelpers2 = _interopRequireDefault(_handleBarsHelpers);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67,7 +67,11 @@ exports.default = function (_ref) {
             name: "Bob Smith",
             description: "My Description",
             postNumber: "1000",
-            postedAt: "July 1st, 2015"
+            postedAt: "July 1st, 2015",
+            avatar: {
+              permalink: "/img/a1.jpg",
+              cache: "/img/a1.jpg"
+            }
           },
           title: "Title",
           starsRating: "3",
@@ -77,7 +81,11 @@ exports.default = function (_ref) {
             name: "Bob Smith",
             description: "My Description",
             postNumber: "1000",
-            postedAt: "July 1st, 2015"
+            postedAt: "July 1st, 2015",
+            avatar: {
+              permalink: "/img/a1.jpg",
+              cache: "/img/a1.jpg"
+            }
           },
           title: "Title",
           starsRating: "3",
@@ -90,7 +98,7 @@ exports.default = function (_ref) {
           res.status(404).send('Not found');
         } else {
           var source = data.toString();
-          var template = _handlebars2.default.compile(source);
+          var template = _handleBarsHelpers2.default.compile(source);
           var html = template(context);
 
           res.send(html);

@@ -1,7 +1,7 @@
 import resource from 'resource-router-middleware';
 import path from 'path';
 import fs from 'fs';
-import Handlebars from 'handlebars';
+import Handlebars from '../views/handleBarsHelpers.js';
 
 
 export default ({ config, db }) => resource({

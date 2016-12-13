@@ -18,13 +18,146 @@
           <div class="wrapper wrapper-content animated fadeInRight">
             <div class="ibox-content forum-post-container">
               <div class="forum-post-info">
-                <h4><span class="text-navy"><i class="fa fa-globe"></i> Product Concensus</span> - Excellent - <span class="text-muted">100 Opinions</span></h4>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3><span class="text-navy"><i class="fa fa-globe"></i> Consensus</span><span class="text-muted"> - 100 Opinions</span></h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="ibox float-e-margins">
+                      <div class="ibox-title">
+                        <span class="label label-success pull-right">Updated Today</span>
+                        <h5>Excellent</h5>
+                      </div>
+                      
+                      <div class="ibox-content">
+                        <!-- <h1 class="no-margins">3.1</h1> -->
+                        La La Land breathes new life into a bygone genre with thrillingly assured direction, powerful performances, and an irresistible excess of heart.
+                        <small>Quality Score</small>
+                      </div>                      
+                      <div class="ibox-content">
+                      <div class="row">
+                          <div class="col-xs-4">
+                            <span class="text-navy"><h1 class="no-margins">4.7</h1>
+                              <small>Quality Score</small>
+                            </span>
+                          </div>
+                          <div class="col-xs-4">
+                            <span class="text-navy"><h1 class="no-margins">4.1</h1>
+                              <small>Value Score</small>
+                            </span>
+                          </div>
+                          <div class="col-xs-4">
+                            <span class="text-navy"><h1 class="no-margins">4.5</h1>
+                              <small>Overall</small>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="stat-list">
+                      <li>
+                        <h2 class="no-margins">
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                        </h2>
+                        <div class="stat-percent">78% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 78%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins">
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                        </h2>
+                        <div class="stat-percent">20% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 20%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins">
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                        </h2>
+                        <div class="stat-percent">7% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 7%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins">
+                          <i class="fa fa-star text-warning"></i>
+                          <i class="fa fa-star text-warning"></i>
+                        </h2>
+                        <div class="stat-percent">5% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 5%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <h2 class="no-margins">
+                          <i class="fa fa-star text-warning"></i>
+                        </h2>
+                        <div class="stat-percent">12% <i class="fa fa-level-up text-navy"></i></div>
+                        <div class="progress progress-mini">
+                          <div style="width: 12%;" class="progress-bar"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <h2>Welcome Amelia</h2>
+                    <small>You have 42 messages and 6 notifications.</small>
+                    <ul class="list-group clear-list m-t">
+                      <li class="list-group-item fist-item">
+                        <span class="pull-right">
+                          09:00 pm
+                        </span>
+                        <span class="label label-success">1</span> Please contact me
+                      </li>
+                      <li class="list-group-item">
+                        <span class="pull-right">
+                          10:16 am
+                        </span>
+                        <span class="label label-info">2</span> Sign a contract
+                      </li>
+                      <li class="list-group-item">
+                        <span class="pull-right">
+                          08:22 pm
+                        </span>
+                        <span class="label label-primary">3</span> Open new shop
+                      </li>
+                      <li class="list-group-item">
+                        <span class="pull-right">
+                          11:06 pm
+                        </span>
+                        <span class="label label-default">4</span> Call back to Sylvia
+                      </li>
+                      <li class="list-group-item">
+                        <span class="pull-right">
+                          12:00 am
+                        </span>
+                        <span class="label label-primary">5</span> Write a letter to Sandra
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               {{#each reviews}}
               <div class="media">
                 <a class="forum-avatar" href="#">
                   <img src="{{author.avatar.permalink}}" class="img-circle" alt="image">
-                  <!-- <img src="{{author.avatar}}" class="img-circle" alt="image"> -->
                   <div class="author-info">
                     {{author.name}}<br>
                     {{{author.description}}}<br>
@@ -35,9 +168,7 @@
                 <div class="media-body">
                   <div class="pull-left text-center">
                     <div class="m-t-xs review-rating-stars">
-                      {{starsRating}}
-                      <!-- <i class="fa fa-star text-warning"></i> -->
-                      <!-- <i class="fa fa-star text-warning"></i> -->
+                      {{{renderStars starsRating}}}
                     </div>
                   </div>
                   <h4 class="media-heading">{{title}}</h4>
